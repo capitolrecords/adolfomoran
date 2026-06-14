@@ -29,8 +29,16 @@
             text-align: center;
         }
         h1 {
-            color: #2c3e50;
             margin-bottom: 5px;
+        }
+        /* Estilos para el enlace de tu nombre */
+        .mi-nombre-link {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .mi-nombre-link:hover {
+            color: #0077b5; /* Cambia al azul corporativo de LinkedIn al pasar el cursor */
         }
         .subtitulo {
             color: #7f8c8d;
@@ -142,7 +150,8 @@
 <body>
 
     <div class="tarjeta">
-        <h1>¡Hola! Soy Adolfo Morán</h1>
+        <!-- Hipervínculo añadido a tu nombre -->
+        <h1>¡Hola! Soy <a href="https://www.linkedin.com/in/adolfomoran" target="_blank" class="mi-nombre-link">Adolfo Morán</a></h1>
         <p class="subtitulo">Entusiasta de la IA y el aprendizaje</p>
         
         <p class="descripcion">
