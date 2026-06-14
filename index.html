@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Presentación</title>
+    <!-- Enlace a la biblioteca de Font Awesome para los iconos de LinkedIn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Estilos para que tu página se vea moderna y limpia */
         body {
@@ -22,7 +24,7 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            max-width: 450px;
+            max-width: 550px; /* Ajustado para que tus textos largos se lean mucho mejor */
             width: 90%;
             text-align: center;
         }
@@ -39,6 +41,80 @@
             line-height: 1.6;
             color: #555;
         }
+
+        /* ==========================================
+           ESTILOS: Sección de Cursos Destacados 
+           ========================================== */
+        .seccion-cursos {
+            text-align: left; /* Alineado a la izquierda como en la imagen */
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .seccion-cursos h2 {
+            color: #e91e63; /* Color rosa brillante de la imagen */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        
+        .lista-cursos-destacados {
+            list-style: none;
+            padding: 0;
+            color: #333;
+            margin: 0;
+        }
+        
+        .lista-cursos-destacados li {
+            margin-bottom: 12px;
+            font-size: 1em;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        /* Viñeta oscura personalizada */
+        .lista-cursos-destacados li::before {
+            content: '•';
+            color: #333;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        /* Enlaces de los profesores con estilo turquesa */
+        .profe-link {
+            color: #33cccc; 
+            text-decoration: none;
+            font-weight: normal;
+        }
+        
+        .profe-link:hover {
+            color: #0077b5; /* Cambia al azul de LinkedIn al pasar el cursor */
+        }
+
+        .linkedin-icon {
+            font-size: 0.9em;
+            margin-right: 5px;
+        }
+
+        /* Sombras gris para resaltar la palabra 'innovación' */
+        .resaltado {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+
+        /* Líneas horizontales oscuras para enmarcar las secciones */
+        .linea-separadora {
+            border: 0;
+            border-top: 2px solid #333;
+            margin: 25px 0;
+            width: 100%;
+        }
+        /* ========================================== */
+
         .intereses-titulo {
             margin-top: 25px;
             color: #2c3e50;
@@ -55,10 +131,11 @@
         .lista-intereses li {
             background-color: #3498db;
             color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 15px;
+            font-size: 0.95em;
+            text-align: left; /* Permite leer las descripciones largas cómodamente */
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -74,13 +151,30 @@
             en Sillicon Valley.
         </p>
         
+        <!-- Línea separadora superior -->
+        <hr class="linea-separadora">
+
+        <!-- Sección de Cursos Destacados de la Universidad Católica San Pablo -->
+        <div class="seccion-cursos">
+            <h2>Cursos Destacados</h2>
+            <ul class="lista-cursos-destacados">
+                <li>Pensamiento crítico e <span class="resaltado">innovación</span> - <a href="https://pe.linkedin.com/in/ana-elizabeth-g%C3%B3mez-burns-4502263b" target="_blank" class="profe-link"><span class="linkedin-icon"><i class="fab fa-linkedin-in"></i></span> Ana Elizabeth Gómez Burns</a></li>
+                <li>Introduction to Computer Science - <a href="https://pe.linkedin.com/in/ecuadrosv" target="_blank" class="profe-link"><span class="linkedin-icon"><i class="fab fa-linkedin-in"></i></span> Enrique Cuadros V.</a></li>
+                <li>Estrategia de marketing - <a href="https://pe.linkedin.com/in/miguel-salomon-529453125" target="_blank" class="profe-link"><span class="linkedin-icon"><i class="fab fa-linkedin-in"></i></span> Miguel Salomón</a></li>
+                <li>Antropología - <a href="https://pe.linkedin.com/in/jos%C3%A9-luis-begazo-de-latorre-99b53959" target="_blank" class="profe-link"><span class="linkedin-icon"><i class="fab fa-linkedin-in"></i></span> José Luis Begazo De la Torre</a></li>
+            </ul>
+        </div>
+
+        <!-- Línea separadora inferior -->
+        <hr class="linea-separadora">
+        
         <h3 class="intereses-titulo">Mis Intereses principales:</h3>
         <ul class="lista-intereses">
-            <li>💻 Indagación: Me gusta indagar y leer artículos útiles para mí y de mi interés.</li>
-            <li>📚 Lectura: Leo un promedio de 4 horas diarias sobre finanzas, IA y otros temas de mi interés.</li>
-            <li>🎨 Arte: Me gusta comprar y coleccionar arte.</li>
-            <li>🎵 Música: La música que escucho me ayuda a ser mejor y disfruto escucharla.</li>
-            <li>🚀 Innovación: Tengo interés en la innovación siempre y cuando aporte soluciones adecuadas.</li>
+            <li>💻 <strong>Indagación:</strong> Me gusta indagar y leer artículos útiles para mí y de mi interés.</li>
+            <li>📚 <strong>Lectura:</strong> Leo un promedio de 4 horas diarias sobre finanzas, IA y otros temas de mi interés.</li>
+            <li>🎨 <strong>Arte:</strong> Me gusta comprar y coleccionar arte.</li>
+            <li>🎵 <strong>Música:</strong> La música que escucho me ayuda a ser mejor y profeso escucharla.</li>
+            <li>🚀 <strong>Innovación:</strong> Tengo interés en la innovación siempre y cuando aporte soluciones adecuadas.</li>
         </ul>
     </div>
 
